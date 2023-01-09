@@ -5,8 +5,14 @@ name = "pypi"
 
 [packages]
 django = "==4.1.5"
+django-filter = "*"
+djlint = "*"
 
 [dev-packages]
+black = "*"
 
 [requires]
 python_version = "3.11"
+
+[pipenv]
+allow_prereleases = true

@@ -1,0 +1,13 @@
+{% extends 'default.html' %} 
+{% load custom_filters %}
+
+{% block content %} 
+{{ time|date:'d M Y' }}
+<hr />
+<ul>
+  <li>{{ post.title }}</li>
+  <li>{{ post.text |censor }}</li>
+  <li>{{ post.date }}</li>
+</ul>
+
+{% endblock content %}
