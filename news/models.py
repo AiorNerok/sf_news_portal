@@ -70,7 +70,7 @@ class Post(models.Model):
         return f"{self.text[:124]}..."
 
     def __str__(self) -> str:
-        return f"{self.author}| {self.type_post} |{self.title}"
+        return f"{self.author}"
 
 
 class PostCategory(models.Model):
